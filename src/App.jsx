@@ -1,5 +1,5 @@
 import './App.css'
-import DevDashboard from './components/DevDashboard'
+import LandingPage from './components/LandingPage'
 import Navbar from './components/LandingPage/Navbar'
 import Stars from './components/Stars'
 
@@ -12,7 +12,7 @@ function App() {
    
    
       <div className="relative z-10">
-        <DevDashboard />
+        <LandingPage />
       </div>
     </>
   )
