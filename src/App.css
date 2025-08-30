@@ -1,1 +1,135 @@
-@import "tailwindcss"
+
+@import "TailwindCSS";
+
+
+/* Import Fonts */
+
+/* Root Variables for Colors & Fonts */
+:root {
+  --color-dark: #272727;
+  --color-gray: #747474;
+  --color-orange: #FF652F;
+  --color-yellow: #FFE400;
+  --color-green: #14A76C;
+  --color-white: #ffffff;
+  --color-neon: #3AAFA9;
+  --color-blue: #2E9CCA;
+  --color-neon: #17E9E0;
+  --color-pink: #DA7B93;
+}
+/* Logo */
+.logo-font {
+  font-family: "Gugi", "Arvo", serif;
+  font-weight: 700; /* adjust if needed */
+}
+
+/* Headings */
+.heading-font {
+  font-family: "Cookie", "Arvo", "Gugi", "Open Sans", sans-serif;
+  font-weight: 150; /* adjust for h1/h2 etc. */
+}
+
+/* Body / other text */
+.body-font {
+  font-family: "Roboto", "Roboto Flex", "Open Sans", sans-serif;
+  font-weight: 340; /* normal body weight */
+}
+
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: var(--color-dark);
+  color: var(--color-white);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--color-white);
+}
+
+/* Paragraphs & General Text */
+p, span, li, a {
+  font-family: var(--font-body);
+  color: var(--color-white);
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+  color: var(--color-orange);
+}
+
+/* Buttons */
+button {
+  font-family: var(--font-body);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: var(--color-orange);
+  color: var(--color-white);
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: var(--color-yellow);
+  color: var(--color-dark);
+}
+
+/* Responsive Layout */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 0.95rem;
+  }
+  h1 {
+    font-size: 1.75rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  .container {
+    width: 95%;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 0.9rem;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 1.25rem;
+  }
+  button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}

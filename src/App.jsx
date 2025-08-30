@@ -1,24 +1,19 @@
 import './App.css'
-import Header from './components/landing-page/Header'
-import Hero from './components/landing-page/Hero'
-import Features from './components/landing-page/Features'
-import HowItWorks from './components/landing-page/HowItWorks'
-import Testimonials from './components/landing-page/Testimonial'
-import CallToAction from './components/landing-page/CallToAction'
-import Footer from './components/landing-page/Footer'
+import DevDashboard from './components/DevDashboard'
+import Navbar from './components/LandingPage/Navbar'
+import Stars from './components/Stars'
 
 function App() {
   return (
     <>
-       <div className="min-h-screen bg-white">
-      <Header />
-      <Hero />
-      <Features />
-      <HowItWorks />
-      <Testimonials />
-      <CallToAction />
-      <Footer />
-    </div>
+      {/* Stars as a fixed full-page background */}
+      <Stars className="fixed top-0 left-0 w-full h-full z-0" />
+
+   
+   
+      <div className="relative z-10">
+        <DevDashboard />
+      </div>
     </>
   )
 }
