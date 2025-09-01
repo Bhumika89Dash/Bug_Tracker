@@ -1,5 +1,6 @@
 import './App.css'
 import LandingPage from './components/LandingPage'
+import DevDashboard from './components/DevDashboard.jsx'
 import Navbar from './components/LandingPage/Navbar'
 import Stars from './components/Stars'
 import BugCursor from './components/LandingPage/BugCursor/BugPointer.jsx'

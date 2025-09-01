@@ -10,7 +10,7 @@ const features = [
     desc: "Steps, severity, attachments, and reproducible info for clear bug tracking.",
   },
   {
-    icon: <FaUserShield size={28} color="var(--color-green)" />,
+    icon: <FaUserShield  size={28} color="var(--color-green)" />,
     title: "Role-based Assignments",
     desc: "Assign bugs to developers, testers, team leaders, AI/ML, UI/UX, or CyberSec roles.",
   },
@@ -71,7 +71,7 @@ export default function Features() {
                     "0 2px 6px rgba(0,0,0,0.2)";
                 }}
               >
-                <div className="mb-3">{feature.icon}</div>
+                <div className="d-flex justify-content-center mb-3">{feature.icon}</div>
                 <h5
                   className=" mb-2"
                   style={{ color: "var(--color-yellow)" }}

@@ -44,3 +44,4 @@ export default function Header() {
     </header>
   );
 }
+/* Profile avatar and Welcome User */
