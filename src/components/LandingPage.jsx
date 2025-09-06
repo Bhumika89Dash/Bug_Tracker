@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from './LandingPage/Navbar'
+import Navbar from './Navbar'
 import Hero from './LandingPage/Hero'
 import Features from './LandingPage/Features'
 import HowItWorks from './LandingPage/HowItWorks'

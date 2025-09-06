@@ -1,0 +1,21 @@
+.custom-input {
+  background-color: transparent !important;
+  border: 1px solid white !important;
+  color: white !important;
+}
+
+.custom-input option {
+  background-color: #212529; /* dark dropdown */
+  color: white;
+}
+
+.custom-input::placeholder {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.custom-input:focus {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  border-color: #0d6efd !important;
+  color: white !important;
+}

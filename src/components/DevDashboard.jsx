@@ -1,10 +1,12 @@
 import { Card, CardContent } from "../components/card";
-import Header from "./LandingPage/Navbar";
+import Header from "./Navbar";
 import Button from "../components/Button";
 import { PieChart, Pie, Cell, LineChart, Line, XAxis, YAxis, Tooltip, Legend, CartesianGrid, Sector } from "recharts";
 import { Folder, Bug, BarChart3, User } from "lucide-react";
 import React from "react";
 import { ResponsiveContainer } from "recharts";
+import SidebarDev from "./SidebarDev";
+import Layout from "../Layout";
 const colWidths = ["40%", "30%", "30%"];
 export default function DevDashboard({
   stats = [
@@ -44,26 +46,14 @@ export default function DevDashboard({
   pieColors = ["#0088FE", "#00C49F", "#FFBB28"],
 }) {
   return (
-    <div className="flex flex-col vh-screen bg-black text-white">
-      {/* Header */}
-      <Header className="w-full shadow-md" />
+    <Layout>
+    <div className="flex flex-col vh-screen text-white">
+ 
 
       <div className="flex flex-1">
         {/* Sidebar */}
         <aside className="relative mt-4 ml-10 w-64 h-68 shadow-md p-4 bg-[#272727] rounded-2xl z-50">
-          <nav className="flex flex-col gap-2">
-            {sidebarItems.map((item, i) => (
-              <Button
-                key={i}
-                variant="ghost"
-                className="flex items-center gap-2 justify-start hover:bg-gray-800 rounded-full px-4 py-2 transition-colors duration-200"
-                onClick={item.onClick}
-                >
-                <item.icon className="w-6 h-6" />
-                <span className="text-base font-medium">{item.label}</span>
-              </Button>
-            ))}
-          </nav>
+          <SidebarDev />
         </aside>
 
         {/* Main Content */}
@@ -216,5 +206,6 @@ export default function DevDashboard({
         </main>
       </div>
     </div>
+    </Layout>
   );
 }
