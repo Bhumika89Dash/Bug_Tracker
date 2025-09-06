@@ -1,11 +1,11 @@
-import React, { useState } from "react";
-import BugCursor from "./components/LandingPage/BugCursor/BugPointer";
-import Stars from "./components/Stars";
-import Nav from "./components/Nav.jsx";
-import SidebarDev from "./components/SidebarDev.jsx";
+import React, { useState } from 'react';
+import BugCursor from './components/LandingPage/BugCursor/BugPointer';
+import Stars from './components/Stars';
+import SidebarTest from './components/TesterDashboard/SidebarTest';
+import Nav from './components/Nav';
 
-const Layout = ({ children }) => {
-  const [username, setUsername] = useState("Bhumika"); // later replace with backend value
+const LayoutTest = ({ children }) => {
+  const [username, setUsername] = useState("Ramu");
 
   const handleLogout = () => {
     setUsername(null);
@@ -28,12 +28,15 @@ const Layout = ({ children }) => {
         {/* Main content area with Sidebar + Children */}
         <div className="flex flex-1 mt-2 px-10 gap-6">
           {/* Sidebar */}
-          <aside className="w-64 flex-shrink-0 shadow-md p-4 rounded-2xl" style={{ backgroundColor: "rgba(39, 39, 39, 0.8)" }}>
-            <SidebarDev />
+          <aside
+            className="w-64 flex-shrink-0 shadow-md p-4 rounded-2xl"
+            style={{ backgroundColor: "rgba(39, 39, 39, 0.8)" }}
+          >
+            <SidebarTest />
           </aside>
 
           {/* Main content */}
-          <main className="flex-1">
+          <main className="flex-1 overflow-y-auto">
             {children}
           </main>
         </div>
@@ -42,4 +45,4 @@ const Layout = ({ children }) => {
   );
 };
 
-export default Layout;
+export default LayoutTest;

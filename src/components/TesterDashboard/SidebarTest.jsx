@@ -8,11 +8,11 @@ export default function SidebarTest() {
      ${isActive ? "bg-gray-800 text-white" : "text-gray-300 hover:bg-gray-700"}`;
 
   return (
-    <aside className="relative mt-4 ml-10 w-64 h-screen shadow-md p-4 bg-[#272727] rounded-2xl z-50 flex flex-col">
+    <>
 
       {/* Navigation Links */}
       <nav className="flex-1 flex flex-col mt-4">
-        <NavLink to="/dashboard" className={linkClass}>
+        <NavLink to="/tester-oauth" className={linkClass}>
           <House className="w-6 h-6" /> <span className="text-base font-small">Dashboard</span>
         </NavLink>
 
@@ -37,6 +37,6 @@ export default function SidebarTest() {
       <div className="p-6 border-t border-gray-700 text-sm text-gray-500">
         Tester Panel
       </div>
-    </aside>
+    </>
   );
 }

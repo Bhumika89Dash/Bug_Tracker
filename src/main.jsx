@@ -7,6 +7,7 @@ import  TesterDashboard from "./components/TesterDashboard.jsx";
 import DevDashboard from "./components/DevDashboard.jsx";
 import Login from "./components/Login.jsx";
 import Signup from "./components/Signup.jsx";
+import ProjectsPage from "./components/ProjectsPage.jsx";
 import {
   createBrowserRouter,
   createRoutesFromElements,
@@ -22,6 +23,7 @@ const router = createBrowserRouter(
       <Route path="/tester-oauth" element={<TesterDashboard />} />
       <Route path="/login" element={<Login />} />
       <Route path="/signup" element={<Signup />} />
+      <Route path="/project" element= {<ProjectsPage />} />
     </>
   )
 );

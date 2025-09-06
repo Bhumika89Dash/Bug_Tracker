@@ -52,9 +52,7 @@ export default function DevDashboard({
 
       <div className="flex flex-1">
         {/* Sidebar */}
-        <aside className="relative mt-4 ml-10 w-64 h-68 shadow-md p-4 bg-[#272727] rounded-2xl z-50">
-          <SidebarDev />
-        </aside>
+        
 
         {/* Main Content */}
         <main className="relative mr-4 flex-1 flex flex-col">

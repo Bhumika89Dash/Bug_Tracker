@@ -7,7 +7,7 @@ export default function SidebarDev() {
       <nav className="flex flex-col gap-2">
 
         <NavLink
-          to="/dashboard"
+          to="/developer-oauth"
           className={({ isActive }) =>
             `flex items-center gap-2 justify-start rounded-full px-4 py-2 transition-colors duration-200
             ${isActive ? "bg-gray-800 text-white" : "text-gray-300 hover:bg-gray-700"}`
